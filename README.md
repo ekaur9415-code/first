@@ -1,18 +1,19 @@
 # TalentBridge UI Prototype (Tailwind CSS v4)
 
-This repository contains a production-oriented static HTML prototype for a multi-role recruitment platform.
+Production-oriented static front-end prototype for a multi-role recruitment product.
 
-## Scope delivered
+## Delivered product flows
 
-- Authentication: candidate registration, recruiter sign-up, login with role-aware access states
-- Candidate: profile setup/searchable toggle, dashboard, job search filters, job details, chat, offers/interview responses
-- Recruiter: limited account dashboard, upgrade request workflow, full dashboard, candidate review, messaging, offer tracking
-- Admin: recruiter approval, monitoring, communication logs, reporting with export actions
+- Authentication and role-based routing
+- Candidate registration, profile setup, advanced job search, interest expression, chat, and offer decisions
+- Recruiter limited/full access, upgrade requests, candidate review, messaging, and offer tracking
+- Admin approvals, communication monitoring/logs, and reporting exports
 
-## Tech
+## Design direction
 
-- Plain HTML + Tailwind CSS v4 browser build (`@tailwindcss/browser`)
-- Lightweight shared stylesheet for baseline behavior and accessibility helpers
+- Modern, clean visual language with glass-style cards and gradient/grid background
+- Consistent headers, role chips, and task-focused page sections
+- Accessibility baseline: skip-link support, semantic tables, labeled form fields
 
 ## Run locally
 
