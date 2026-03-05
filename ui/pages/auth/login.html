@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login & Role-based Access · TalentBridge</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="../../assets/styles.css" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+<header class="border-b border-slate-200 bg-white">
+  <div class="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-3 lg:px-6">
+    <a href="../../index.html" class="text-lg font-bold tracking-tight text-indigo-700">TalentBridge</a>
+    <nav aria-label="Primary" class="hidden items-center gap-5 text-sm font-medium md:flex">
+      <a class="text-slate-600 hover:text-indigo-700" href="../../index.html">Page map</a>
+      <a class="text-slate-600 hover:text-indigo-700" href="#">Support</a>
+      <a class="text-slate-600 hover:text-indigo-700" href="#">Settings</a>
+    </nav>
+    <div class="flex items-center gap-2">
+      <span class="rounded-full bg-indigo-50 px-3 py-1 text-xs font-semibold text-indigo-700 ring-1 ring-indigo-200">Guest</span>
+      <button aria-label="Open notifications" class="rounded-lg border border-slate-300 px-2 py-1 text-xs text-slate-700">Alerts</button>
+    </div>
+  </div>
+</header>
+  <main id="main-content" class="mx-auto max-w-7xl space-y-6 px-4 py-6 lg:px-6">
+    
+<section class="grid gap-6 lg:grid-cols-3">
+  <article class="rounded-2xl border border-slate-200 bg-white p-6 lg:col-span-2">
+    <header>
+      <h1 class="text-2xl font-bold tracking-tight">Secure login</h1>
+      <p class="mt-2 text-sm text-slate-600">Sign in with your work or candidate account. Role-based routing controls limited/full module access.</p>
+    </header>
+    <form class="mt-6 grid gap-4 md:grid-cols-2" aria-label="Login form">
+      <div class="md:col-span-2">
+        <label for="login-email" class="text-sm font-medium">Email</label>
+        <input id="login-email" autocomplete="email" type="email" class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2" placeholder="name@example.com" />
+      </div>
+      <div class="md:col-span-2">
+        <label for="login-password" class="text-sm font-medium">Password</label>
+        <input id="login-password" autocomplete="current-password" type="password" class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2" placeholder="••••••••" />
+      </div>
+      <div>
+        <label for="login-role" class="text-sm font-medium">Role</label>
+        <select id="login-role" class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2">
+          <option>Candidate</option><option>Recruiter</option><option>Admin</option>
+        </select>
+      </div>
+      <div class="flex items-end"><label class="flex items-center gap-2 text-sm"><input type="checkbox" /> Remember this device</label></div>
+      <button class="md:col-span-2 rounded-xl bg-indigo-600 px-4 py-2.5 font-semibold text-white hover:bg-indigo-700">Login</button>
+    </form>
+  </article>
+  <aside class="space-y-4 rounded-2xl border border-slate-200 bg-white p-6" aria-label="Access states">
+    <h2 class="text-base font-semibold">Access states</h2>
+    <div class="rounded-xl border border-amber-200 bg-amber-50 p-3 text-sm text-amber-900"><strong>Limited:</strong> Profile browsing + request workflow only.</div>
+    <div class="rounded-xl border border-emerald-200 bg-emerald-50 p-3 text-sm text-emerald-900"><strong>Full:</strong> Messaging, offers, interview flow, CV download.</div>
+    <div class="rounded-xl border border-slate-200 bg-slate-50 p-3 text-sm text-slate-700"><strong>Security:</strong> 2FA and login audit log placeholders included in production handoff.</div>
+  </aside>
+</section>
+  </main>
+</body>
+</html>
