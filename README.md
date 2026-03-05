@@ -1,17 +1,11 @@
-# TalentBridge UI Prototype (Tailwind CSS v4)
+# TalentBridge Tailwind v4 HTML Prototype
 
-Production-ready static frontend prototype for role-based recruitment workflows.
+This repository now contains a static multi-role UI prototype implementing the requested plan:
 
-## Conflict resolution status
-
-This branch has been reconciled with `main` and all listed conflicted UI files were normalized to a consistent template system and refreshed visual style.
-
-## Included flows
-
-- Auth: login, candidate registration, recruiter sign-up
-- Candidate: dashboard, profile, search, job details, chat
-- Recruiter: limited/full dashboards, upgrade request, candidate review, chat
-- Admin: approvals, monitoring, reports
+- Authentication & role-based access pages
+- Candidate flow (profile, dashboard, search, job details, chat)
+- Recruiter limited/full flow (upgrade request, candidate review, chat)
+- Admin flow (approvals, monitoring, reports/exports)
 
 ## Run locally
 
@@ -20,10 +14,4 @@ cd ui
 python -m http.server 4173
 ```
 
-Open: `http://localhost:4173`
-
-## Quality check
-
-```bash
-python scripts/validate_ui_links.py
-```
+Then open `http://localhost:4173`.
