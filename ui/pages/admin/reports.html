@@ -3,53 +3,48 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Reports & Exports · TalentBridge</title>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <style type="text/tailwindcss">
-    @theme {
-      --color-brand-50: #eef2ff;
-      --color-brand-500: #6366f1;
-      --color-brand-600: #4f46e5;
-      --color-brand-700: #4338ca;
-      --color-surface: #ffffff;
-      --color-app: #f8fafc;
-      --radius-card: 1rem;
-      --shadow-soft: 0 10px 30px -12px rgb(2 6 23 / 0.2);
-    }
-
-    @utility card {
-      @apply rounded-card border border-slate-200/70 bg-surface shadow-soft;
-    }
-
-    @utility btn-primary {
-      @apply inline-flex items-center justify-center rounded-xl bg-brand-600 px-4 py-2.5 text-sm font-semibold text-white hover:bg-brand-700;
-    }
-
-    @utility btn-secondary {
-      @apply inline-flex items-center justify-center rounded-xl border border-slate-300 bg-white px-4 py-2.5 text-sm font-medium text-slate-700 hover:bg-slate-50;
-    }
-  </style>
   <link rel="stylesheet" href="../../assets/styles.css" />
+  <title>Reports & Exports · TalentBridge</title>
 </head>
-<body class="bg-app text-slate-900">
+<body class="tb-shell tb-grid-bg">
   <a href="#main" class="skip-link">Skip to main content</a>
-  <header class="sticky top-0 z-20 border-b border-slate-200 bg-white/90 backdrop-blur">
+  <header class="border-b border-white/70 bg-white/75 backdrop-blur-xl">
     <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 lg:px-6">
-      <a href="../../index.html" class="text-lg font-bold tracking-tight text-brand-700">TalentBridge</a>
-      <nav class="hidden items-center gap-5 text-sm text-slate-600 md:flex" aria-label="Global">
-        <a class="hover:text-brand-700" href="../../index.html">Experience map</a>
-        <a class="hover:text-brand-700" href="#">Docs</a>
-        <a class="hover:text-brand-700" href="#">Support</a>
+      <a href="../../index.html" class="text-lg font-bold text-indigo-700">TalentBridge</a>
+      <nav class="hidden gap-6 text-sm text-slate-600 md:flex" aria-label="Global">
+        <a class="hover:text-indigo-700" href="../../index.html">Experience map</a>
+        <a class="hover:text-indigo-700" href="#">Docs</a>
+        <a class="hover:text-indigo-700" href="#">Support</a>
       </nav>
-      <span class="rounded-full bg-brand-50 px-3 py-1 text-xs font-semibold text-brand-700 ring-1 ring-brand-500/20">Admin</span>
+      <span class="rounded-full bg-indigo-100 px-3 py-1 text-xs font-semibold text-indigo-700 ring-1 ring-indigo-200">Admin</span>
     </div>
   </header>
-  <main id="main" class="mx-auto max-w-7xl space-y-6 px-4 py-6 lg:px-6">
-    <section class="card p-5">
-      <p class="text-xs font-semibold uppercase tracking-wider text-brand-600">Admin Operations</p>
-      <h1 class="mt-1 text-2xl font-bold tracking-tight">Reports & Exports</h1>
+  <main id="main" class="mx-auto max-w-7xl px-4 py-6 lg:px-6">
+    <section class="mb-6 rounded-2xl border border-white/80 bg-white/85 p-5 shadow-sm tb-glass">
+      <p class="text-xs font-semibold uppercase tracking-wide text-indigo-600">Admin</p>
+      <h1 class="text-2xl font-bold tracking-tight">Reports & Exports</h1>
     </section>
-    <section class="card p-6"><p class="text-sm text-slate-600">Export candidates, recruiters, offers, and timestamped audit logs.</p><div class="mt-4 grid gap-3 md:grid-cols-2"><button class="btn-primary">Export candidates CSV</button><button class="btn-primary">Export recruiters CSV</button><button class="btn-primary">Export offers Excel</button><button class="btn-secondary">Download audit logs</button></div></section>
+    <section class="rounded-2xl border border-white/80 bg-white/90 p-6 shadow-sm"><p class="text-sm text-slate-600">Export candidates, recruiters, offers, and audit logs.</p><div class="mt-4 grid gap-3 md:grid-cols-2"><button class="rounded-xl bg-slate-900 px-4 py-2.5 text-white">Export candidates CSV</button><button class="rounded-xl bg-slate-900 px-4 py-2.5 text-white">Export recruiters CSV</button><button class="rounded-xl bg-slate-900 px-4 py-2.5 text-white">Export offers Excel</button><button class="rounded-xl border border-slate-300 px-4 py-2.5">Download audit logs</button></div></section>
   </main>
+</body></html>
+  <title>Admin Reporting</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="../../assets/styles.css" />
+</head>
+<body class="min-h-screen bg-slate-50 text-slate-900">
+  <header class="sticky top-0 z-10 border-b border-slate-200 bg-white/90 backdrop-blur">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3">
+      <a href="../../index.html" class="text-lg font-bold text-indigo-700">TalentBridge</a>
+      <nav class="hidden gap-4 text-sm md:flex">
+        <a class="text-slate-600 hover:text-indigo-700" href="#">Dashboard</a>
+        <a class="text-slate-600 hover:text-indigo-700" href="#">Messages</a>
+        <a class="text-slate-600 hover:text-indigo-700" href="#">Reports</a>
+      </nav>
+      <span class="rounded-full bg-indigo-100 px-3 py-1 text-xs font-semibold text-indigo-700">Admin</span>
+    </div>
+  </header>
+  <main class="mx-auto max-w-7xl space-y-6 px-4 py-6">
+<section class="rounded-2xl bg-white p-6 ring-1 ring-slate-200"><h1 class="text-2xl font-bold">Reports & Exports</h1><div class="mt-4 grid gap-3 md:grid-cols-2"><button class="rounded-xl bg-slate-900 px-4 py-2 text-white">Export Candidates CSV</button><button class="rounded-xl bg-slate-900 px-4 py-2 text-white">Export Recruiters CSV</button><button class="rounded-xl bg-slate-900 px-4 py-2 text-white">Export Offers Excel</button><button class="rounded-xl bg-slate-900 px-4 py-2 text-white">Audit Logs</button></div><p class="mt-4 text-sm text-slate-600">Every export writes timestamped audit logs.</p></section></main>
 </body>
 </html>
