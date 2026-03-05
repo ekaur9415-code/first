@@ -5,54 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <link rel="stylesheet" href="../../assets/styles.css" />
-  <title>Secure Login & Role Routing · TalentBridge</title>
+  <title>Login & Role Access · TalentBridge</title>
 </head>
 <body class="tb-shell tb-grid-bg">
   <a href="#main" class="skip-link">Skip to main content</a>
-  <div class="border-b border-white/60 bg-white/70 backdrop-blur-xl">
+  <header class="border-b border-white/70 bg-white/75 backdrop-blur-xl">
     <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 lg:px-6">
-      <a href="../../index.html" class="text-lg font-bold tracking-tight text-indigo-700">TalentBridge</a>
-      <div class="hidden items-center gap-6 text-sm text-slate-600 md:flex">
-        <a href="../../index.html" class="hover:text-indigo-700">Product map</a>
-        <a href="#" class="hover:text-indigo-700">Help center</a>
-        <a href="#" class="hover:text-indigo-700">System status</a>
-      </div>
-      <div class="flex items-center gap-2">
-        <span class="rounded-full bg-indigo-100 px-3 py-1 text-xs font-semibold text-indigo-700 ring-1 ring-indigo-200">Guest</span>
-      </div>
+      <a href="../../index.html" class="text-lg font-bold text-indigo-700">TalentBridge</a>
+      <nav class="hidden gap-6 text-sm text-slate-600 md:flex" aria-label="Global">
+        <a class="hover:text-indigo-700" href="../../index.html">Experience map</a>
+        <a class="hover:text-indigo-700" href="#">Docs</a>
+        <a class="hover:text-indigo-700" href="#">Support</a>
+      </nav>
+      <span class="rounded-full bg-indigo-100 px-3 py-1 text-xs font-semibold text-indigo-700 ring-1 ring-indigo-200">Guest</span>
     </div>
-  </div>
+  </header>
   <main id="main" class="mx-auto max-w-7xl px-4 py-6 lg:px-6">
-    <section class="mb-6 rounded-2xl border border-white/70 bg-white/80 p-5 shadow-sm backdrop-blur tb-glass">
-      <p class="text-xs font-semibold uppercase tracking-wider text-indigo-600">Authentication</p>
-      <h1 class="mt-1 text-2xl font-bold tracking-tight text-slate-900">Secure Login & Role Routing</h1>
+    <section class="mb-6 rounded-2xl border border-white/80 bg-white/85 p-5 shadow-sm tb-glass">
+      <p class="text-xs font-semibold uppercase tracking-wide text-indigo-600">Authentication</p>
+      <h1 class="text-2xl font-bold tracking-tight">Login & Role Access</h1>
     </section>
-    
-<section class="grid gap-6 lg:grid-cols-3">
-  <article class="rounded-2xl border border-white/60 bg-white/85 p-6 shadow-sm lg:col-span-2">
-    <h2 class="text-lg font-semibold">Welcome back</h2>
-    <p class="mt-2 text-sm text-slate-600">Production login with role-aware redirect, session hardening, and audit events.</p>
-    <form class="mt-6 grid gap-4 md:grid-cols-2">
-      <label for="email" class="text-sm font-medium md:col-span-2">Email
-        <input id="email" type="email" autocomplete="email" class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2" placeholder="name@company.com" />
-      </label>
-      <label for="password" class="text-sm font-medium md:col-span-2">Password
-        <input id="password" type="password" autocomplete="current-password" class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2" placeholder="••••••••" />
-      </label>
-      <label for="role" class="text-sm font-medium">Access role
-        <select id="role" class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2"><option>Candidate</option><option>Recruiter</option><option>Admin</option></select>
-      </label>
-      <label class="mt-7 flex items-center gap-2 text-sm"><input type="checkbox" /> Remember this device</label>
-      <button class="md:col-span-2 rounded-xl bg-indigo-600 px-4 py-2.5 font-semibold text-white hover:bg-indigo-700">Continue to dashboard</button>
-    </form>
-  </article>
-  <aside class="space-y-3 rounded-2xl border border-white/60 bg-white/85 p-6 shadow-sm">
-    <h3 class="font-semibold">Access policy states</h3>
-    <div class="rounded-xl border border-amber-200 bg-amber-50 p-3 text-sm text-amber-900"><strong>Limited</strong>: basic browsing + upgrade request only.</div>
-    <div class="rounded-xl border border-emerald-200 bg-emerald-50 p-3 text-sm text-emerald-900"><strong>Full</strong>: messaging, offers, CV download, all search filters.</div>
-    <div class="rounded-xl border border-slate-200 bg-slate-50 p-3 text-sm text-slate-700">Security notes: 2FA, lockout threshold, and location alerts.</div>
-  </aside>
-</section>
+    <section class="grid gap-6 lg:grid-cols-3"><article class="rounded-2xl border border-white/80 bg-white/90 p-6 shadow-sm lg:col-span-2"><h2 class="text-lg font-semibold">Welcome back</h2><p class="mt-1 text-sm text-slate-600">Secure sign-in with role-based routing and session policy enforcement.</p><form class="mt-6 grid gap-4 md:grid-cols-2"><label class="text-sm font-medium md:col-span-2">Email<input type="email" class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2"/></label><label class="text-sm font-medium md:col-span-2">Password<input type="password" class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2"/></label><label class="text-sm font-medium">Role<select class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2"><option>Candidate</option><option>Recruiter</option><option>Admin</option></select></label><label class="mt-7 flex items-center gap-2 text-sm"><input type="checkbox"/>Remember this device</label><button class="md:col-span-2 rounded-xl bg-indigo-600 px-4 py-2.5 font-semibold text-white">Login</button></form></article><aside class="space-y-3 rounded-2xl border border-white/80 bg-white/90 p-6 shadow-sm"><div class="rounded-xl border border-amber-200 bg-amber-50 p-3 text-sm text-amber-900">Limited: browse + request upgrade.</div><div class="rounded-xl border border-emerald-200 bg-emerald-50 p-3 text-sm text-emerald-900">Full: chat, CV access, offers.</div><div class="rounded-xl border border-slate-200 bg-slate-50 p-3 text-sm">Audit log and MFA hooks enabled in integration.</div></aside></section>
   </main>
-</body>
-</html>
+</body></html>
